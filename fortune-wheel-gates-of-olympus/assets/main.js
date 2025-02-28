@@ -1,15 +1,13 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM полностью загружен и разобран!", new Date().getMilliseconds());
-    
-    setTimeout(() => {
-        document.querySelector('.splashscreen-background').classList.add('hide');
-    }, 1);
+    window.onload = function () {
+        setTimeout(() => {
+            document.querySelector('.splashscreen-background').classList.add('hide');
+        }, 1);
 
-    setTimeout(() => {
-        document.querySelector('.splashscreen-background').style.display = "none";
-    }, 500);
+        setTimeout(() => {
+            document.querySelector('.splashscreen-background').style.display = "none";
+        }, 500);
+    }
 });
 
 
