@@ -12,6 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.querySelector('.claim-button').onclick = function (event) {
+    event.preventDefault();
+
+    fbq('track', 'Lead');
+    setTimeout(function () {
+        window.location.href = "https://laven.bet/?modal=register"
+    }, 500);
+
+    return false;
+}
 
 let spinNumber = 0;
 let spinning = false;
